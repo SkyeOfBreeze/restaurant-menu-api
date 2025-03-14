@@ -13,7 +13,7 @@ console.log("Restaurant Menu API V1.0")
 
 //Build the schema for the menu
 console.log("Building menu schema")
-const schema = buildSchema(typeDefs);
+export const schema = buildSchema(typeDefs);
 console.log("built schema!")
 
 const file = readFileSync(path.join(__dirname , 'data/data.json'), 'utf8')

@@ -14,27 +14,34 @@ Please install and configure the following software
     yarn init -2
 ```
 
-Note: this is using experimental typescript native support for node (https://nodejs.org/en/learn/typescript/run-natively)
-
 Then run
 
 ```bash
     yarn install
 ```
 
+NOTE: under normal circumstances, never commit the .env file, but in this case to save setup time, it has been included
+
+To run the application, please run the following command:
+```bash
+   yarn dev
+```
+
+To test the application, please run the following command:
+
+```bash
+   yarn test
+```
+
+## Running the server
+
+Testing the server can be done with the bundled GraphiQL, which is provided as a web client via 'localhost:5466/'. This will not be included if the environment variable `STAGE` is not `dev`
+
+The graphql API can be found at 'localhost:5466/graphql'
+
 ## Dependencies used
 
-### Express
-
-Web server
-
-### GraphQL
-
-### Jest
-
-Unit testing
-
-### Typescript
+Please see the package.json for the dependencies, but any notes worth mentioning are below
 
 ### TS-Node
 
