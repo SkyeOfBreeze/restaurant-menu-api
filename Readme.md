@@ -33,3 +33,9 @@ Web server
 ### Jest
 
 Unit testing
+
+### Typescript
+
+### TS-Node
+
+run typescript code, since node does not have stable support for typescript natively yet. Node22 includes experimental native suppoort, but I am not using it at the moment.
