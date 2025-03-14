@@ -1,3 +1,35 @@
 type Query {
-    hello: String
- } 
+    hello: String!
+    menu: Menu!
+ }
+
+ type Menu {
+   _titles: [String!]!
+   Appetizers: [MenuItem!]!,
+   Entrees: [MenuItem!]!,
+   Sandwiches: [MenuItem!]!,
+   Soup: [MenuItem!]!,
+   Fajitas: [MenuItem!]!,
+   Tacos: [MenuItem!]!,
+   Enchiladas: DescItemsObject!
+   Quiche: [MenuItem!]!
+   Salads: [MenuItem!]!
+ }
+
+ type MenuItem {
+    title: String!,
+    description: String!,
+    price: Float!,
+    isSpecial: Boolean!
+ }
+
+ type Sandwiches{
+   description: String!
+   cold: DescItemsObject!,
+   hot: DescItemsObject!
+ }
+
+ type DescItemsObject{
+      description: String!,
+      items: [MenuItem!]!
+   }

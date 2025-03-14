@@ -16,9 +16,13 @@ console.log("Building menu schema")
 const schema = buildSchema(typeDefs);
 console.log("built schema!")
 
-const root = {
+export const root = {
     hello(){
         return "Hello world!"
+    },
+    menu(){
+        const file = readFileSync(path.join(__dirname , 'data/data.json'), 'utf8')
+        return JSON.parse(file)
     }
 }
 
@@ -34,16 +38,18 @@ app.all(
     })
 )
 
-app.listen(5466)
-
-if(process.env.STAGE === 'dev'){
-    console.log("We are in development mode. Run the helper GraphiQL IDE")
-    const { ruruHTML } = require('ruru/server');
-    // Serve the GraphiQL IDE.
-    app.get('/', (_req, res) => {
-        res.type('html');
-        res.end(ruruHTML({ endpoint: '/graphql' }));
-    });
-    console.log('Running a GraphiQL API server at http://localhost:5466/')
+if (require.main === module) {
+    app.listen(5466)
+    if(process.env.STAGE === 'dev'){
+        console.log("We are in development mode. Run the helper GraphiQL IDE")
+        const { ruruHTML } = require('ruru/server');
+        // Serve the GraphiQL IDE.
+        app.get('/', (_req, res) => {
+            res.type('html');
+            res.end(ruruHTML({ endpoint: '/graphql' }));
+        });
+        console.log('Running a GraphiQL API server at http://localhost:5466/')
+    }
+    console.log('Running a GraphQL API server at http://localhost:5466/graphql');    
 }
-console.log('Running a GraphQL API server at http://localhost:5466/graphql');
+
