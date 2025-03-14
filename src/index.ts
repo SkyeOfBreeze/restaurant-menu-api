@@ -16,26 +16,29 @@ console.log("Building menu schema")
 const schema = buildSchema(typeDefs);
 console.log("built schema!")
 
+const file = readFileSync(path.join(__dirname , 'data/data.json'), 'utf8')
+const json = JSON.parse(file)
+
 export const root = {
     hello(){
         return "Hello world!"
     },
-    menu(){
-        const file = readFileSync(path.join(__dirname , 'data/data.json'), 'utf8')
-        return JSON.parse(file)
+    menu:()=>{
+        return json
     }
 }
 
 const app = express()
 
 //graphql hook into express
+const graphqlHandler = createHandler({
+    schema: schema,
+    rootValue: root
+})
 
 app.all(
     '/graphql',
-    createHandler({
-        schema: schema,
-        rootValue: root
-    })
+    graphqlHandler
 )
 
 if (require.main === module) {
