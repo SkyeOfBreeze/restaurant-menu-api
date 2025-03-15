@@ -1,35 +1,35 @@
 type MenuItem {
-    title: String,
-    description: String,
-    price: Float,
-    isSpecial: Boolean
- }
-
- type DescItemsObject{
-      description: String,
-      items: [MenuItem]
+  title: String,
+  description: String,
+  price: Float,
+  isSpecial: Boolean
 }
 
- type Sandwiches{
-   description: String
-   cold: DescItemsObject,
-   hot: DescItemsObject
- }
+type DescItemsObject{
+  description: String,
+  items: [MenuItem]
+}
+
+type Sandwiches{
+  description: String
+  cold: DescItemsObject,
+  hot: DescItemsObject
+}
 
  type Menu {
-   _titles: [String]
-   Appetizers: [MenuItem],
-   Entrees: [MenuItem],
-   Sandwiches: [MenuItem],
-   Soup: [MenuItem],
-   Fajitas: DescItemsObject,
-   Tacos: DescItemsObject,
-   Enchiladas: [MenuItem]
-   Quiche: [MenuItem]
-   Salads: [MenuItem]
+  _titles: [String]
+  Appetizers: [MenuItem],
+  Entrees: [MenuItem],
+  Sandwiches: [MenuItem],
+  Soup: [MenuItem],
+  Fajitas: DescItemsObject,
+  Tacos: DescItemsObject,
+  Enchiladas: [MenuItem]
+  Quiche: [MenuItem]
+  Salads: [MenuItem]
  }
 
 type Query {
-    hello: String
-    menu: Menu
- }
+  hello: String
+  menu: Menu
+}
