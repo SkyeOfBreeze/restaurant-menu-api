@@ -22,9 +22,9 @@ type MenuItem {
    Entrees: [MenuItem],
    Sandwiches: [MenuItem],
    Soup: [MenuItem],
-   Fajitas: [MenuItem],
-   Tacos: [MenuItem],
-   Enchiladas: DescItemsObject
+   Fajitas: DescItemsObject,
+   Tacos: DescItemsObject,
+   Enchiladas: [MenuItem]
    Quiche: [MenuItem]
    Salads: [MenuItem]
  }

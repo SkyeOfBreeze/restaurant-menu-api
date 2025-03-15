@@ -3,12 +3,12 @@
     "Appetizers",
     "Entrees",
     "Sandwiches",
-    "Soup",
+    "Soup & Salad Combos",
     "Fajitas",
     "Tacos",
     "Enchiladas",
     "Quiche",
-    "Salads"
+    "Green Salads"
   ],
   "Appetizers": [
     {
@@ -74,8 +74,26 @@
       "description": "Choice of sourdough, whole wheat, or rye bread",
       "items": [
         {
-          "title": "Turkey & Avocado",
+          "title": "Turkey & Avocado (Half Sandwich)",
           "description": "with tomato",
+          "price": 7.95,
+          "isSpecial": false
+        },
+        {
+          "title": "Pub Club (Half Sandwich)",
+          "description": "turkey, bacon. lettuce, tomato",
+          "price": 7.95,
+          "isSpecial": false
+        },
+        {
+          "title": "Rare Roast Beef & Swiss (Half Sandwich)",
+          "description": "sweet-hot mustard, lettuce, red onion",
+          "price": 7.95,
+          "isSpecial": false
+        },
+        {
+          "title": "Veggie (Half Sandwich)",
+          "description": "pepper jack, avocado, sprout, tomato",
           "price": 7.95,
           "isSpecial": false
         },
@@ -94,7 +112,7 @@
         {
           "title": "Veggie",
           "description": "pepper jack, avocado, sprout, tomato",
-          "price": 7.95,
+          "price": 9.25,
           "isSpecial": false
         }
       ]
@@ -155,99 +173,102 @@
   },
   "Soup": [
     {
-      "title": "French Onion",
+      "title": "French Onion or Soup of the Day",
       "description": "",
       "price": 4.95,
       "isSpecial": false
     },
     {
-      "title": "Soup of the Day",
-      "description": "",
-      "price": 4.95,
+      "title": "French Onion or Soup of the Day Combo 1",
+      "description": "with small green salad, fresh fruit or house pasta",
+      "price": 7.25,
+      "isSpecial": false
+    },
+    {
+      "title": "French Onion or Soup of the Day Combo 2",
+      "description": "with half pasta of the day",
+      "price": 8.75,
       "isSpecial": false
     }
   ],
-  "Fajitas": [
-    {
-      "title": "Chicken",
-      "description": "Onions, Poblano and Bell Peppers, Guacamole, Two Salsas",
-      "price": 10.95,
-      "isSpecial": false
-    },
-    {
-      "title": "Sirloin Steak",
-      "description": "Onions, Poblano and Bell Peppers, Carrots, Onion, Guacamole, Two Salsas",
-      "price": 10.95,
-      "isSpecial": false
-    }
-  ],
-  "Tacos": [
-    {
-      "title": "Beer Battered Fish",
-      "description": "with Jalapeño Remoulade, Roasted Salsa, Cabbage",
-      "price": 9.95,
-      "isSpecial": false
-    },
-    {
-      "title": "Carne Asada",
-      "description": "(marinated sirloin) with Guacamole, Tomatillo Salsa",
-      "price": 9.95,
-      "isSpecial": false
-    },
-    {
-      "title": "Citrus Marinated Chicken",
-      "description": "with Guacamole, Tomatillo Salsa",
-      "price": 9.95,
-      "isSpecial": false
-    },
-    {
-      "title": "Grilled Veggie",
-      "description": "with Zucchini, Yellow Squash, Bell Peppers, Onion, Guacamole, Tomatillo Salsa",
-      "price": 9.95,
-      "isSpecial": false
-    }
-  ],
-  "Enchiladas": {
-    "description": "with Southwestern Succotash, Black Beans with Chipotle Crema",
+  "Fajitas": {
+    "description": "Served with red rice, black beans, grilled tomato salad, choice of corn or flour tortillas",
     "items": [
       {
-        "title": "Beef",
+        "title": "Chicken Onions, Poblano and Bell Peppers, Guacamole, Two Salsas",
         "description": "",
-        "price": 8.50,
+        "price": 10.95,
         "isSpecial": false
       },
       {
-        "title": "Chicken",
+        "title": "Sirloin Steak, Onions, Poblano and Bell Peppers, Carrots, Onion, Guacamole, Two Salsas",
         "description": "",
-        "price": 8.50,
-        "isSpecial": false
-      },
-      {
-        "title": "Cheese",
-        "description": "",
-        "price": 8.50,
-        "isSpecial": false
-      },
-      {
-        "title": "Veggie",
-        "description": "",
-        "price": 8.50,
-        "isSpecial": false
-      },
-      {
-        "title": "Chili Relleno",
-        "description": "Stuffed with Jack Cheese & Corn Glazed Yam, Chayote Squash Succotash, Red Chili Sauce",
-        "price": 9.95,
-        "isSpecial": false
-      },
-      {
-        "title": "Pepita Crusted Salmon",
-        "description": "with Chipotle Glaze – chevre whipped yams, jicama slaw, tomatillo sauce",
         "price": 10.95,
         "isSpecial": false
       }
     ]
   },
+  "Tacos": {
+    "description": "Served with red rice, black beans, corn & romaine salad, tortilla chips",
+    "items": [
+      {
+        "title": "Chicken Onions, Poblano and Bell Peppers, Guacamole, Two Salsas",
+        "description": "",
+        "price": 9.95,
+        "isSpecial": false
+      },
+      {
+        "title": "Carne Asada (marinated sirloin) with Guacamole, Tomatillo Salsa",
+        "description": "",
+        "price": 9.95,
+        "isSpecial": false
+      },
+      {
+        "title": "Citrus Marinated Chicken with Guacamole, Tomatillo Salsa",
+        "description": "",
+        "price": 9.95,
+        "isSpecial": false
+      },
+      {
+        "title": "Grilled Veggie with Zucchini, Yellow Squash, Bell Peppers, Onion, Guacamole, Tomatillo Salsa",
+        "description": "",
+        "price": 9.95,
+        "isSpecial": false
+      }
+    ]
+  },
+  "Enchiladas": [
+    {
+      "title": "uno",
+      "description": "with Southwestern Succotash, Black Beans with Chipotle Crema. Choice of Beef, Chicken, Cheese or Veggie",
+      "price": 8.50,
+      "isSpecial": false
+    },
+    {
+      "title": "dos",
+      "description": "with Southwestern Succotash, Black Beans with Chipotle Crema. Choice of Beef, Chicken, Cheese or Veggie",
+      "price": 9.95,
+      "isSpecial": false
+    },
+    {
+      "title": "tres",
+      "description": "with Southwestern Succotash, Black Beans with Chipotle Crema. Choice of Beef, Chicken, Cheese or Veggie",
+      "price": 11.50,
+      "isSpecial": false
+    },
+    {
+      "title": "Chili Relleno Stuffed",
+      "description": "Jack Cheese & Corn Glazed Yam, Chayote Squash Succotash, Red Chili Sauce",
+      "price": 9.95,
+      "isSpecial": false
+    },
+    {
+      "title": "Pepita Crusted Salmon with Chipotle Glaze",
+      "description": "chevre whipped yams, jicama slaw, tomatillo sauce",
+      "price": 10.95,
+      "isSpecial": false
+    }
+  ],
   "Quiche": [
     {
       "title": "Bacon, Swiss, Mushroom, Zucchini and Mushroom Quiche",

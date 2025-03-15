@@ -12,7 +12,6 @@
   },
   "scripts": {
     "dev": "ts-node src/index.ts",
-    "build": "todo",
     "test": "jest src/"
   },
   "devDependencies": {
